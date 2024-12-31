@@ -1,0 +1,124 @@
+/* General Form Container */
+.task-form {
+    background-color: #f9e1f6;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(230, 5, 91, 0.3);
+    padding: 60px;
+    max-width: 550px;
+    margin: 30px auto;
+    font-family: 'Arial', sans-serif;
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Form Title */
+.task-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #2c3e50;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Input Fields (Text, Textarea, Date, etc.) */
+.task-input,
+.task-textarea,
+.task-select,
+.task-date {
+    width: 100%;
+    padding: 14px;
+    font-size: 1.1em;
+    border: 1px solid #e01717;
+    border-radius: 8px;
+    background-color: #f1ebeb;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+/* Focused State */
+.task-input:focus,
+.task-textarea:focus,
+.task-select:focus,
+.task-date:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+/* Textarea Special Styling */
+.task-textarea {
+    height: 140px;
+    resize: vertical;
+}
+
+/* Date Picker Styling */
+.task-date-container {
+    margin-bottom: 20px;
+}
+
+.task-date-container label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Date Input */
+.task-date {
+    padding: 14px;
+    font-size: 1.1em;
+    border: 1px solid #f01717;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+/* Select Dropdown Styling */
+.task-select {
+    padding: 14px;
+    font-size: 1.1em;
+    border: 1px solid #f01717;
+    border-radius: 8px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+/* Button Styling */
+.task-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.task-btn:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes focusEffect {
+    from {
+        border-color: #e01717;
+    }
+    to {
+        border-color: #3498db;
+    }
+}
